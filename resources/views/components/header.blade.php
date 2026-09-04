@@ -3,7 +3,7 @@
 
     {{-- Logo --}}
     <a
-      href="#"
+      href="/"
       class="group inline-flex items-center gap-3">
       <span
         class="flex h-10 w-10 items-center justify-center
@@ -49,7 +49,7 @@
 
       {{-- Login --}}
       <a
-        href="#"
+        href="/login"
         class="inline-flex items-center gap-2
                        rounded-lg bg-orange-500
                        px-5 py-2.5
