@@ -50,79 +50,47 @@
       {{-- Login --}}
 
       @auth
-      <form method="POST" action="/logout">
-        @csrf
+      <form method="POST" action="/logout"> @csrf <button type="submit" class="inline-flex items-center gap-2 rounded-lg bg-orange-500 px-5 py-2.5 text-sm font-bold text-black transition duration-300 hover:bg-orange-400 hover:shadow-lg hover:shadow-orange-500/20"> <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="m10 17 5-5-5-5" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12H3" />
+          </svg> Sair </button> </form>
+      @endauth
+      @guest
+      <a
+        href="/login"
+        class="inline-flex items-center gap-2
+                     rounded-lg bg-orange-500
+                     px-5 py-2.5
+                     text-sm font-bold text-black
+                     transition duration-300
+                     hover:bg-orange-400
+                     hover:shadow-lg
+                     hover:shadow-orange-500/20">
+        <svg
+          class="h-4 w-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          viewBox="0 0 24 24">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
 
-        <a
-          href="/logout"
-          class="inline-flex items-center gap-2
-                       rounded-lg bg-orange-500
-                       px-5 py-2.5
-                       text-sm font-bold text-black
-                       transition duration-300
-                       hover:bg-orange-400
-                       hover:shadow-lg
-                       hover:shadow-orange-500/20">
-          <svg
-            class="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m10 17 5-5-5-5" />
 
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m10 17 5-5-5-5" />
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 12H3" />
+        </svg>
 
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12H3" />
-          </svg>
-
-          Sair
-        </a>
-        @endauth
-        @guest
-        <a
-          href="/login"
-          class="inline-flex items-center gap-2
-                       rounded-lg bg-orange-500
-                       px-5 py-2.5
-                       text-sm font-bold text-black
-                       transition duration-300
-                       hover:bg-orange-400
-                       hover:shadow-lg
-                       hover:shadow-orange-500/20">
-          <svg
-            class="h-4 w-4"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
-
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="m10 17 5-5-5-5" />
-
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12H3" />
-          </svg>
-
-          Entrar
-        </a>
+        Entrar
+      </a>
       </form>
       @endguest
     </div>

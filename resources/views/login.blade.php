@@ -30,7 +30,7 @@
 
         {{-- Formulário --}}
         <form
-          action="/login"
+          action="{{ route('auth.login') }}"
           method="POST"
           class="rounded-2xl border border-gray-800
                    bg-gray-950 p-8
@@ -191,7 +191,7 @@
               Ainda não possui uma conta?
 
               <a
-                href="#"
+                href="{{ route('site.register') }}"
                 class="ml-1 font-semibold text-orange-500
                                transition hover:text-orange-400">
                 Criar conta
